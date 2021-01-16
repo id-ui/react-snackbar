@@ -75,12 +75,6 @@ function SnackbarGroup({
 }
 
 SnackbarGroup.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.object,
-    PropTypes.func,
-    PropTypes.string,
-    PropTypes.elementType,
-  ]),
   items: PropTypes.arrayOf(
     PropTypes.shape({
       render: PropTypes.func,

@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from 'react';
 import styled from 'styled-components';
-import { withPropsTable } from 'storybook-addon-react-docgen';
 import { PLACEMENTS_MAPPING } from 'config/constants';
 import SnackbarGroup from './SnackbarGroup';
 
@@ -95,12 +94,6 @@ export default {
     onClose: {
       action: 'onClose',
       description: 'Event, fired when snackbar closed',
-    },
-  },
-  decorators: [withPropsTable],
-  parameters: {
-    props: {
-      propTablesInclude: [SnackbarGroup],
     },
   },
 };
